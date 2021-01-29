@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/scripts/landPage/main_ctrl.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/main_label_strings.tres" type="Resource" id=2]
+
+[node name="root" type="Node"]
+
+[node name="view" type="Node" parent="."]
+
+[node name="backGrroundRect" type="ColorRect" parent="view"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.109804, 0.109804, 0.109804, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hi_lable" type="Label" parent="view"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -20.0
+margin_top = -7.0
+margin_right = 20.0
+margin_bottom = 7.0
+text = "Olá"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Node" parent="."]
+
+[node name="main_ctrl" type="Node" parent="Control"]
+script = ExtResource( 1 )
+mainLabelStrings = ExtResource( 2 )

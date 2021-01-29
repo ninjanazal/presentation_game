@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Resource",
+"class": "String_list",
+"language": "GDScript",
+"path": "res://src/resources/custom_resource/main_lable_texts.gd"
+} ]
 _global_script_class_icons={
-
+"String_list": ""
 }
 
 [application]
