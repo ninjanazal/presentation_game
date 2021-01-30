@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Control",
+"class": "BodyController",
+"language": "GDScript",
+"path": "res://src/scripts/bodyController.gd"
+} ]
 _global_script_class_icons={
-
+"BodyController": ""
 }
 
 [application]
@@ -19,13 +24,20 @@ config/name="Presentation_proj"
 run/main_scene="res://src/scenes/entry_screne.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+MainController="*res://src/scripts/global_scripts/MainController.gd"
+
 [display]
 
 window/size/width=1920
 window/size/height=1080
+window/size/test_width=1280
+window/size/test_height=720
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
 environment/default_environment="res://default_env.tres"
