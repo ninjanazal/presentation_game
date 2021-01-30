@@ -13,15 +13,21 @@ _global_script_classes=[ {
 "class": "BodyController",
 "language": "GDScript",
 "path": "res://src/scripts/bodyController.gd"
+}, {
+"base": "Resource",
+"class": "DisplayInformation",
+"language": "GDScript",
+"path": "res://src/scripts/customResources/DisplayInformationResource.gd"
 } ]
 _global_script_class_icons={
-"BodyController": ""
+"BodyController": "",
+"DisplayInformation": ""
 }
 
 [application]
 
 config/name="Presentation_proj"
-run/main_scene="res://src/scenes/entry_screne.tscn"
+run/main_scene="res://src/scenes/entry_scene.tscn"
 config/icon="res://icon.png"
 
 [autoload]

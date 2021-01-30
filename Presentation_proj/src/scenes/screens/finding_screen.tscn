@@ -1,0 +1,62 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://src/resources/inport/fonts/dynamicFont/roboto_70.tres" type="DynamicFont" id=1]
+[ext_resource path="res://src/resources/inport/sprites/loadingLogo.png" type="Texture" id=2]
+[ext_resource path="res://src/scripts/finding_behavior.gd" type="Script" id=3]
+[ext_resource path="res://src/resources/DisplayInformations/3-Analisando audiencia.tres" type="Resource" id=4]
+[ext_resource path="res://src/resources/DisplayInformations/0-connecting.tres" type="Resource" id=5]
+[ext_resource path="res://src/resources/DisplayInformations/4-Analisando audiencia.tres" type="Resource" id=6]
+[ext_resource path="res://src/resources/DisplayInformations/5-Analisando audiencia.tres" type="Resource" id=7]
+[ext_resource path="res://src/resources/DisplayInformations/6-Analisando audiencia.tres" type="Resource" id=8]
+[ext_resource path="res://src/resources/DisplayInformations/7-Possivel candidatos.tres" type="Resource" id=9]
+[ext_resource path="res://src/resources/DisplayInformations/2-processingIt.tres" type="Resource" id=10]
+[ext_resource path="res://src/resources/DisplayInformations/1-retreaving data.tres" type="Resource" id=11]
+[ext_resource path="res://src/resources/DisplayInformations/9-Possivel candidatos.tres" type="Resource" id=12]
+[ext_resource path="res://src/resources/DisplayInformations/8-Possivel candidatos.tres" type="Resource" id=13]
+[ext_resource path="res://src/resources/DisplayInformations/10-Possivel candidatos.tres" type="Resource" id=14]
+[ext_resource path="res://src/resources/DisplayInformations/11-Possivel candidatos.tres" type="Resource" id=15]
+
+[node name="finding_screen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+states = [ ExtResource( 5 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 14 ), ExtResource( 15 ) ]
+loadingAngularSpeed = 35.0
+
+[node name="info_lable" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 91.0
+margin_top = 487.0
+margin_right = -92.0
+margin_bottom = -487.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "THIS IS A SAMPLE"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -150.0
+margin_top = -58.368
+margin_right = 150.0
+margin_bottom = 241.632
+rect_scale = Vector2( 0.8, 0.8 )
+rect_pivot_offset = Vector2( 150, 150 )
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}

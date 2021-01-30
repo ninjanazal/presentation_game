@@ -1,0 +1,138 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/resources/inport/imgs/euricoImg.jpg" type="Texture" id=1]
+[ext_resource path="res://src/resources/inport/fonts/dynamicFont/roboto_50.tres" type="DynamicFont" id=2]
+[ext_resource path="res://src/resources/inport/fonts/dynamicFont/roboto_90.tres" type="DynamicFont" id=3]
+
+[node name="information_screen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 0.891667
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.073598
+anchor_top = 0.0459203
+anchor_right = 0.363181
+anchor_bottom = 0.889119
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 7
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 822.0
+margin_top = 32.4
+margin_right = 1862.0
+margin_bottom = 115.4
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Eurico Martins"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+modulate = Color( 0.513726, 1, 0.47451, 1 )
+anchor_left = 0.0673736
+anchor_top = 0.92674
+anchor_right = 0.37077
+anchor_bottom = 1.07347
+margin_left = 0.479996
+margin_top = -0.0720825
+margin_right = -0.0400391
+margin_bottom = -0.373047
+mouse_default_cursor_shape = 2
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 2 )
+text = "Encomendar por
+apenas 1 Eurico"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.445833
+anchor_top = 0.168519
+anchor_right = 0.977083
+anchor_bottom = 0.966667
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="idade" type="Label" parent="VBoxContainer"]
+margin_right = 1020.0
+margin_bottom = 60.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "-> Idade: 27"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="naturalidade" type="Label" parent="VBoxContainer"]
+margin_top = 64.0
+margin_right = 1020.0
+margin_bottom = 124.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "-> Naturalidade: Santo Tirso"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="qualidades" type="Label" parent="VBoxContainer"]
+margin_top = 128.0
+margin_right = 1020.0
+margin_bottom = 188.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "-> Qualidades: Divertido, dedicado e curioso"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hobbies" type="Label" parent="VBoxContainer"]
+margin_top = 192.0
+margin_right = 1020.0
+margin_bottom = 567.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "-> Hobbies: 
+|   -->Series
+|   -->Filmes
+|   -->Gaming
+|   -->Memes
+|   -->\"Feature implemantation\""
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Skills" type="Label" parent="VBoxContainer"]
+margin_top = 571.0
+margin_right = 1020.0
+margin_bottom = 631.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "-> Skills:  C++, C#, Unity"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
