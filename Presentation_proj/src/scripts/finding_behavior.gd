@@ -25,5 +25,7 @@ func _displayInformationCycle():
 		_info_lable.set_text(states[currentMessage].getText());
 		yield(get_tree().create_timer(states[currentMessage].getTimeOn()), "timeout")
 		currentMessage +=1
+	
 	MainController.SwitchTo(2)
+	_info_lable.set_text("- - - - -")
 	

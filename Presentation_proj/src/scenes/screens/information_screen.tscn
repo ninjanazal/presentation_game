@@ -1,21 +1,23 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://src/resources/inport/imgs/euricoImg.jpg" type="Texture" id=1]
 [ext_resource path="res://src/resources/inport/fonts/dynamicFont/roboto_50.tres" type="DynamicFont" id=2]
 [ext_resource path="res://src/resources/inport/fonts/dynamicFont/roboto_90.tres" type="DynamicFont" id=3]
+[ext_resource path="res://src/scenes/screens/information_screen.gd" type="Script" id=4]
 
 [node name="information_screen" type="Control"]
 anchor_right = 1.0
-anchor_bottom = 0.891667
+anchor_bottom = 1.0
+script = ExtResource( 4 )
 __meta__ = {
-"_edit_use_anchors_": true
+"_edit_use_anchors_": false
 }
 
 [node name="TextureRect" type="TextureRect" parent="."]
-anchor_left = 0.073598
-anchor_top = 0.0459203
-anchor_right = 0.363181
-anchor_bottom = 0.889119
+anchor_left = 0.0734375
+anchor_top = 0.0462963
+anchor_right = 0.363021
+anchor_bottom = 0.807407
 texture = ExtResource( 1 )
 expand = true
 stretch_mode = 7
@@ -37,12 +39,27 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="LinkButton" type="LinkButton" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 860.0
+margin_top = 854.0
+margin_right = -449.0
+margin_bottom = -166.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.0196078, 0, 0.364706, 1 )
+text = "https://github.com/ninjanazal"
+underline = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Button" type="Button" parent="."]
 modulate = Color( 0.513726, 1, 0.47451, 1 )
 anchor_left = 0.0673736
-anchor_top = 0.92674
+anchor_top = 0.82421
 anchor_right = 0.37077
-anchor_bottom = 1.07347
+anchor_bottom = 0.97094
 margin_left = 0.479996
 margin_top = -0.0720825
 margin_right = -0.0400391
@@ -135,4 +152,61 @@ text = "-> Skills:  C++, C#, Unity"
 valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
+}
+
+[node name="PopUp-Exit" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="PopUp-Exit"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.266667 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="PopUp-Exit"]
+anchor_left = 0.278
+anchor_top = 0.321441
+anchor_right = 0.721
+anchor_bottom = 0.498292
+margin_left = 0.239929
+margin_right = 0.679932
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="PopUp-Exit/Panel"]
+anchor_left = 0.227
+anchor_top = 0.395
+anchor_right = 0.773
+anchor_bottom = 0.605
+margin_left = 2.05321
+margin_top = -60.506
+margin_right = 1.40717
+margin_bottom = -60.608
+custom_fonts/font = ExtResource( 2 )
+text = "Obrigado pela compra!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="PopUp-Exit/Panel"]
+modulate = Color( 0.0392157, 1, 0.0784314, 1 )
+anchor_top = 0.53868
+anchor_right = 1.0
+anchor_bottom = 1.03665
+margin_top = 0.112183
+custom_fonts/font = ExtResource( 2 )
+text = "Concluir"
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": true
 }
