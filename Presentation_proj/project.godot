@@ -8,20 +8,23 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Resource",
-"class": "String_list",
-"language": "GDScript",
-"path": "res://src/resources/custom_resource/main_lable_texts.gd"
-} ]
+_global_script_classes=[  ]
 _global_script_class_icons={
-"String_list": ""
+
 }
 
 [application]
 
 config/name="Presentation_proj"
+run/main_scene="res://src/scenes/entry_screne.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
 
 [rendering]
 
