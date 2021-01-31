@@ -4,6 +4,5 @@
 
 [resource]
 script = ExtResource( 1 )
-text = "Completed (Detected pt-pt target)
-Reconfigurating ..."
-timeOn = 2.45
+text = "Retreaving data from server..."
+timeOn = 0.8

@@ -4,8 +4,5 @@
 
 [resource]
 script = ExtResource( 1 )
-text = "- Possivel candidatos encontrados [10]
--> ERROR :::::
--> Possivel candidato encontrado [1]..
-(Carregando informação)"
-timeOn = 3.1
+text = "Connecting..."
+timeOn = 0.95

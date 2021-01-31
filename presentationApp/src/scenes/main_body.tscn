@@ -22,7 +22,6 @@ visible = false
 
 [node name="finding_screen" parent="." instance=ExtResource( 4 )]
 visible = false
-rect_clip_content = true
 loadingAngularSpeed = 360.0
 
 [node name="information_screen" parent="." instance=ExtResource( 5 )]

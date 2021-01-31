@@ -4,5 +4,6 @@
 
 [resource]
 script = ExtResource( 1 )
-text = "- Recontando possibilidades ..."
-timeOn = 2.35
+text = "- Possivel candidatos encontrados [10]
+->"
+timeOn = 1.0

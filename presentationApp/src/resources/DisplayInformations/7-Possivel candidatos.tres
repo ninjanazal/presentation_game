@@ -4,5 +4,9 @@
 
 [resource]
 script = ExtResource( 1 )
-text = "Retreaving data from server..."
-timeOn = 1.85
+text = "[x] Analisando audiência
+- [x] Analisando expressões
+- [x] Analisando dados 
+
+(...)"
+timeOn = 1.2

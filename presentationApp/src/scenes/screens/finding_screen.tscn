@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://src/resources/inport/fonts/dynamicFont/roboto_70.tres" type="DynamicFont" id=1]
 [ext_resource path="res://src/resources/inport/sprites/loadingLogo.png" type="Texture" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://src/resources/DisplayInformations/8-Possivel candidatos.tres" type="Resource" id=13]
 [ext_resource path="res://src/resources/DisplayInformations/10-Possivel candidatos.tres" type="Resource" id=14]
 [ext_resource path="res://src/resources/DisplayInformations/11-Possivel candidatos.tres" type="Resource" id=15]
+[ext_resource path="res://src/resources/inport/fonts/dynamicFont/roboto_20.tres" type="DynamicFont" id=16]
 
 [node name="finding_screen" type="Control"]
 anchor_right = 1.0
@@ -57,6 +58,20 @@ rect_pivot_offset = Vector2( 150, 150 )
 texture = ExtResource( 2 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+modulate = Color( 0.431373, 1, 0.745098, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 84.0
+margin_top = 862.596
+margin_right = -85.0
+margin_bottom = -179.405
+custom_fonts/font = ExtResource( 16 )
+rounded = true
 __meta__ = {
 "_edit_use_anchors_": false
 }

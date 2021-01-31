@@ -4,5 +4,8 @@
 
 [resource]
 script = ExtResource( 1 )
-text = "Analisando audiência ..."
-timeOn = 2.55
+text = "- Possivel candidatos encontrados [10]
+-> ERROR :::::
+-> Possivel candidato encontrado [1]..
+(Carregando informação)"
+timeOn = 1.1
